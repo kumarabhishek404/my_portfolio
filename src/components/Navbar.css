@@ -90,7 +90,7 @@
         /* align-items: center; */
     }
     .navbar_wrapper {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         width: 100%;
         display: flex;
         justify-content: center;
@@ -138,13 +138,9 @@
         margin-left: 0;
     }
     .menu_container {
-        /* margin: 20px 40px; */
-    }
-    .menu_container {
         visibility: visible;
         opacity: 1;
         margin-top: 10px;
-        /* transition: opacity 5s, visibility 5s; */
     }
 }
 

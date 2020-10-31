@@ -7,18 +7,45 @@ const teamProjects = [
     {
         title: "UDYAMI UTSAV",
         sub_title: "–A National Level Innovation and Entrepreneur Summit",
-        image: "https://s.tmimgcdn.com/blog/wp-content/uploads/2018/04/Web-Design.png?x54449",
+        image: "/images/logo1New.png",
         role: "–Web Developer"
     },
     {
         title: "AnimaDrive",
         sub_title: "–An Initiative for Animal Welfare",
-        image: "/images/logo1.png",
+        image: "/images/logo1New.png",
+        role: "–Web Developer"
+    }
+]
+
+const individualProjects = [
+    {
+        title: "UDYAMI UTSAV",
+        sub_title: "–A National Level Innovation and Entrepreneur Summit",
+        image: "https://s.tmimgcdn.com/blog/wp-content/uploads/2018/04/Web-Design.png?x54449",
         role: "–Web Developer"
     }
 ]
 
 class Projects extends Component {
+    constructor() {
+        super()
+        this.state = {
+            projects: teamProjects
+        }
+    }
+
+    handleTeamProjects() {
+        this.setState({
+            projects: teamProjects
+        })
+    }
+
+    handleIndividualProjects() {
+        this.setState({
+            projects: individualProjects
+        })
+    }
 
 
     render() {
@@ -31,10 +58,10 @@ class Projects extends Component {
                             <div className='project_links'>
                                 <div className='project_links_container'>
                                     <div className='project_links_wrapper'>
-                                        <div className='project_link'>
+                                        <div className='project_link' onClick={() => this.handleTeamProjects()}>
                                             <p>Team Projects</p>
                                         </div>
-                                        <div className='project_link'>
+                                        <div className='project_link' onClick={() => this.handleIndividualProjects()}>
                                             <p>Individual Projects</p>
                                         </div>
                                     </div>
@@ -42,15 +69,17 @@ class Projects extends Component {
                                         <div className='all_projects_container'>
                                             <div className='all_projects_wrapper'>
                                                 {
-                                                    teamProjects.map(project =>
+                                                    this.state.projects.map(project =>
                                                         <div className='project'>
                                                             <div className='project_image'>
                                                                 <figure>
                                                                     <img src={project.image} />
                                                                 </figure>
                                                             </div>
-                                                            <p>Title: {project.title} <span>{project.sub_title}</span></p>
-                                                            <p>Responsibility:<span>{project.role}</span></p>
+                                                            <div className='project_info'>
+                                                                <p>Title: {project.title} <span>{project.sub_title}</span></p>
+                                                                <p>Responsibility:<span>{project.role}</span></p>
+                                                            </div>
                                                         </div>
                                                     )
                                                 }
