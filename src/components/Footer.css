@@ -1,0 +1,151 @@
+.footer {
+    background-color:#0e4940;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+.footer_wrapper {
+    width: 90%;
+    /* border: 2px solid green; */
+}
+
+/* Form  */
+.form h2 {
+    margin: 0 0 30px 0;
+    color: #fffc91;
+}
+.form form {
+    padding: 50px 2px;
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro {
+    width: 40%;
+    min-width: 600px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 0px; */
+    margin-bottom: 0px;
+}
+.input_box{
+    /* border: 2px solid black; */
+    width: 100%;
+}
+.input_box input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    /* border-radius: 5px; */
+    border: none;
+    outline: none;
+    /* border: 2px solid black; */
+    /* border-left: 1px solid grey; */
+    /* margin-right: 10px; */
+}
+.margin {
+    margin-right: 10px;
+}
+.message {
+    width: 40%;
+    min-width: 600px;
+    padding: 15px 0px;
+}
+.message textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    /* border: 2px solid black; */
+}
+.action {
+    width: 8%;
+}
+
+/* .thought {
+    border: 2px solid red;
+    width: 33%;
+    text-align: center;
+} */
+
+/* Links */
+.about_links {
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_links h3 {
+    color: #fffc91;
+}
+.name p {
+    color: #fffc91;
+}
+.links, .thought, .about_us {
+    width: 33%;
+    height: 200px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links div {
+    margin-bottom: 5px;
+}
+.link_item:hover {
+    color: black; 
+    margin-left: 10px;
+}
+.link_item {
+    text-decoration: none;
+    color: white;
+}
+
+/* About us */
+.about_us div {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+    .about_links {
+        flex-flow: column;
+    }
+    .intro, .message {
+        min-width: 300px;
+        flex-flow: column;
+    }
+    .margin {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .link {
+        flex-flow: row;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .intro, .message {
+        min-width: 200px;
+        flex-flow: column;
+    }
+    .links, .thought, .about_us {
+        width: 100%;
+    }
+}

@@ -1,0 +1,107 @@
+.experiences {
+    background-color: #fff;
+    /* border: 2px solid red; */
+    padding: 20px 30px;
+    opacity: 0.9;
+}
+.experiences_container {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+.experiences_container h1 {
+    color:  #fffc91;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+.experiences_wrapper {
+    width: 80%;
+    min-width: 1000px;
+    /* border: 2px solid green; */
+    padding: 40px 30px;
+}
+.experience {
+    /* width: 100%; */
+    border: 2px solid #0e4940;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.experience_item {
+    text-decoration: none;
+    color: #000;
+}
+.info {
+    /* width: 70%; */
+    padding: 10px;
+    max-width: 400px;
+    /* border: 2px solid blue; */
+}
+.logo img{
+    padding: 0px 30px;
+    /* border: 2px solid rgb(24, 23, 23); */
+    max-width: 400px;
+}
+.experience p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1020px) {
+    .experience {
+        flex-flow: column-reverse;
+    }
+    .experiences_container h1 {
+        font-size: 2.4rem;
+    }
+    .experiences_wrapper {
+        width: 100%;
+        min-width: 450px;
+        padding: 20px 0px;
+    }
+    .logo img {
+        width: 350px;
+        height: 150px;;
+    }
+    .info {
+        padding: 10px;
+        max-width: 90%;
+        min-width: 350px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .experiences, .experiences_container {
+        padding: 0;
+    }
+    .experiences_wrapper {
+        width: 100%;
+        min-width: 250px;
+        padding: 10px 20px;
+    }
+    .experiences_container h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    .info {
+        padding: 10px;
+        max-width: 100%;
+        min-width: 200px;
+    }
+    .logo img {
+        width: 200px;
+        height: 100px;;
+    }
+    .info p {
+        /* max-width: 70%; */
+        font-size: 1rem;
+    }
+    .experience {
+        padding: 0;
+    }
+}

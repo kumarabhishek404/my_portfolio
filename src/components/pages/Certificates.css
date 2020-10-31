@@ -1,0 +1,73 @@
+.certificates {
+    /* border: 2px solid red; */
+    background-color:  #fff;
+    padding: 20px 0;
+    opacity: 0.9;
+}
+.certificates_container {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.certificates_container h1 {
+    color:  #fffc91;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+.certificates_wrapper {
+    width: 80%;
+    /* border: 2px solid pink; */
+    padding: 40px 30px;
+}
+.certificate {
+    border: 2px solid #0e4940;
+    margin-bottom: 10px;
+    padding: 40px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-self: start; */
+}
+.certificate p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: start;
+    /* justify-self: start; */
+}
+.certificate img {
+    width: 100%;
+}
+.certificate span {
+    margin-left: 7px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .certificates_wrapper {
+        width: 100%;
+        padding: 40px 60px;
+    }
+    .certificates h1 {
+        font-size: 2.7rem;
+    }
+    .certificate {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .certificates_wrapper {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .certificates h1 {
+        font-size: 2rem;
+    }
+    .certificate {
+        padding: 10px;
+    }
+}
