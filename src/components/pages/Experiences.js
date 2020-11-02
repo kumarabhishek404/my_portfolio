@@ -7,12 +7,14 @@ const experiences = [
     {
         company: 'Udyami Utsav',
         role: 'Web Developer',
-        about: 'Udyami Utsav  aims to provide the young and building entrepreneur of the country with the opportunity to fulfil their dreams, by providing them with a platform to learn, network and explore, in turn helping them to carve their pathway to a bright future and country. '
+        about: 'Udyami Utsav  aims to provide the young and building entrepreneur of the country with the opportunity to fulfil their dreams, by providing them with a platform to learn, network and explore, in turn helping them to carve their pathway to a bright future and country.',
+        image: 'images/udyamiutsav-logo.png'
     },
     {
         company: 'AnimaDrive',
         role: 'Project Manager & Web Developer',
-        about: 'Anima Drive believe in spreading love and awareness towards the innocent animals arounds us. AnimaDrive incubated in ATAL INCUBATED CENTER BIMTECH'
+        about: 'Anima Drive believe in spreading love and awareness towards the innocent animals arounds us. AnimaDrive incubated in ATAL INCUBATED CENTER BIMTECH',
+        image: '/images/animadrive-logo.png'
     }
 ]
 
@@ -32,7 +34,6 @@ class Experiences extends Component {
                                     <div className='experiences_wrapper'>
                                         {
                                             experiences.map(experience =>
-                                                <NavLink to='https://facebook.com' className='experience_item'>
                                                     <div className='experience'>
                                                         <div className='info' >
                                                             <p><span>{experience.company}</span></p>
@@ -41,11 +42,10 @@ class Experiences extends Component {
                                                         </div>
                                                         <div className='logo'>
                                                             <figure>
-                                                                <img src='/images/logo2.png' />
+                                                                <img src={experience.image} alt={experience.company} />
                                                             </figure>
                                                         </div>
                                                     </div>
-                                                </NavLink>
                                             )
                                         }
                                     </div>

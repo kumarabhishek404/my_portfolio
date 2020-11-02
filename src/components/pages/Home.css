@@ -32,7 +32,12 @@
 }
 .home_link {
     opacity: 1;
+    padding-bottom: 2px;
     color: #0e4940;
     font-size: 1.3rem;
     text-decoration: none;
+}
+.home_link:hover {
+    border-bottom: 2px solid #0e4940;
+    padding-bottom: 0;
 }

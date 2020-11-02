@@ -37,17 +37,17 @@ class Navbar extends Component {
                                                 <p>Home</p>
                                             </div>
                                         </NavLink>
-                                        <NavLink to='/about' className='navbar_item'>
+                                        <NavLink to='/about' activeClassName='link_active' className='navbar_item'>
                                             <div className='item'>
                                                 <p>About</p>
                                             </div>
                                         </NavLink>
-                                        <NavLink to='/certificates' className='navbar_item'>
+                                        <NavLink to='/certificates' activeClassName='link_active' className='navbar_item'>
                                             <div className='item'>
                                                 <p>Certificate</p>
                                             </div>
                                         </NavLink>
-                                        <NavLink to='/experiences' className='navbar_item'>
+                                        <NavLink to='/experiences' activeClassName='link_active' className='navbar_item'>
                                             <div className='item'>
                                                 <p>Experiences</p>
                                             </div>

@@ -7,13 +7,13 @@ const teamProjects = [
     {
         title: "UDYAMI UTSAV",
         sub_title: "–A National Level Innovation and Entrepreneur Summit",
-        image1: "/images/logo1New.png",
+        image1: "./images/udyamiutsav-logo.png",
         role: "–Web Developer"
     },
     {
         title: "AnimaDrive",
         sub_title: "–An Initiative for Animal Welfare",
-        image1: "/images/logo1New.png",
+        image1: "./images/animadrive_lap.png",
         role: "–Web Developer"
     }
 ]
@@ -22,20 +22,17 @@ const individualProjects = [
     {
         title: "Home Gallery",
         sub_title: "–For saving your memorable family photos.",
-        image1: "/images/home_gallery_lap.png",
-        image2: "/images/2.png"
+        image1: "./images/home_gallery_lap.png"
     },
     {
         title: "Portfolio",
         sub_title: "–A portfolio which express about me.",
-        image1: "/images/portfolio_lap.png",
-        image2: "/images/2.png"
+        image1: "./images/portfolio_lap.png"
     },
     {
         title: "Calculator",
         sub_title: "–This is a calculator allpication with all functionality.",
-        image1: "/images/Calculator.png",
-        image2: "/images/2.png"
+        image1: "./images/Calculator.png"
     },
     {
         title: "Weather Application",

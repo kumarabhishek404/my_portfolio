@@ -58,12 +58,19 @@
 .item {
     /* text-decoration: none; */
     color: white;
+    padding: 3px 5px;
     text-decoration-style: none;
 }
 .navbar_item p:hover {
-    margin-bottom: 5px;
-    color: white;
-    border-bottom: 2px solid white;
+    /* margin-bottom: 5px; */
+    color: #e1e1e1;
+    /* border-bottom: 2px solid white; */
+}
+.link_active .item {
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 3px 7px;
+    color: #000;
 }
 .admin:hover {
     background-color: black;
