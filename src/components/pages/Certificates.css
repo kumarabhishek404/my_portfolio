@@ -12,7 +12,7 @@
     align-items: center;
 }
 .certificates_container h1 {
-    color:  #fffc91;
+    color:  #0e4940;
     font-weight: bold;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -23,14 +23,17 @@
     padding: 40px 30px;
 }
 .certificate {
-    border: 2px solid #0e4940;
-    margin-bottom: 10px;
+    /* border: 2px solid #0e4940; */
+    margin-bottom: 60px;
     padding: 40px 30px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     /* align-items: center; */
     /* justify-self: start; */
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
 .certificate p {
     font-size: 1.2rem;

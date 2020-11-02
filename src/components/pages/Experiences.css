@@ -13,7 +13,7 @@
     padding: 0px 30px;
 }
 .experiences_container h1 {
-    color:  #fffc91;
+    color:  #0e4940;
     font-weight: bold;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -26,7 +26,10 @@
 }
 .experience {
     /* width: 100%; */
-    border: 2px solid #0e4940;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    /* border: 2px solid #0e4940; */
     padding: 20px 0px;
     margin-bottom: 50px;
     display: flex;

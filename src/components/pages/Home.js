@@ -18,13 +18,13 @@ class Home extends Component {
                             <HeaderImage heading='' />
                             <div className='home_links'>
                                 <div className='home_links_container'>
-                                    <NavLink to='/work' className='home_link'>
+                                    <NavLink to='/works' className='home_link'>
                                         <p>Work</p>
                                     </NavLink>
                                     <NavLink to='/projects' className='home_link'>
                                         <p>Project</p>
                                     </NavLink>
-                                    <NavLink to='skill' className='home_link'>
+                                    <NavLink to='/skills' className='home_link'>
                                         <p>Skills</p>
                                     </NavLink>
                                 </div>

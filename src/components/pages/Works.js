@@ -1,24 +1,15 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import HeaderImage from '../HeaderImage';
-import './Projects.css'
+import './Works.css'
 
-const teamProjects = [
-    {
-        title: "UDYAMI UTSAV",
-        sub_title: "–A National Level Innovation and Entrepreneur Summit",
-        image1: "/images/logo1New.png",
-        role: "–Web Developer"
-    },
+const reactProjects = [
     {
         title: "AnimaDrive",
-        sub_title: "–An Initiative for Animal Welfare",
-        image1: "/images/logo1New.png",
-        role: "–Web Developer"
-    }
-]
-
-const individualProjects = [
+        sub_title: "–An Initiative for Animal Welfare.",
+        image1: "/images/animadrive_lap.png",
+        image2: "/images/2.png"
+    },
     {
         title: "Home Gallery",
         sub_title: "–For saving your memorable family photos.",
@@ -36,13 +27,19 @@ const individualProjects = [
         sub_title: "–This is a calculator allpication with all functionality.",
         image1: "/images/Calculator.png",
         image2: "/images/2.png"
-    },
+    }
+]
+
+const nodejsProjects = [
     {
         title: "Weather Application",
         sub_title: "–A application which provide weather report.",
         image1: "/images/Weather Report.png",
         image2: "/images/2.png",
-    },
+    }
+]
+
+const javascriptProjects = [
     {
         title: "Alarm Clock",
         sub_title: "–An application which have a digital clock and an alarm set.",
@@ -96,7 +93,10 @@ const individualProjects = [
         sub_title: "–An application have many input boxes which takes data with full validation.",
         image1: "/images/Validated Form.png",
         image2: "/images/2.png"
-    },
+    }
+]
+
+const htmlProjects = [
     {
         title: "Online Meal Website",
         sub_title: "–A website which looks like an online meal website.",
@@ -111,65 +111,78 @@ const individualProjects = [
     }
 ]
 
-class Projects extends Component {
+class Works extends Component {
     constructor() {
         super()
         this.state = {
-            projects: teamProjects
+            projects: reactProjects
         }
     }
 
-    handleTeamProjects() {
+    handleReactProjects() {
         this.setState({
-            projects: teamProjects
+            projects: reactProjects
         })
     }
 
-    handleIndividualProjects() {
+    handleNodeProjects() {
         this.setState({
-            projects: individualProjects
+            projects: nodejsProjects
         })
     }
 
+    handleJavaScriptProjects() {
+        this.setState({
+            projects: javascriptProjects
+        })
+    }
+
+    handleHTMLProjects() {
+        this.setState({
+            projects: htmlProjects
+        })
+    }
 
     render() {
         return (
             <>
-                <div className='projecs'>
-                    <div className='projects_container'>
-                        <div className='projects_wrapper'>
-                            <HeaderImage heading='/projects' />
-                            <div className='project_links'>
-                                <div className='project_links_container'>
-                                    <div className='project_links_wrapper'>
-                                        <div className='project_link' onClick={() => this.handleTeamProjects()}>
-                                            <p>Team Projects</p>
-                                        </div>
-                                        <div className='project_link' onClick={() => this.handleIndividualProjects()}>
-                                            <p>Individual Projects</p>
-                                        </div>
-                                    </div>
-                                    <div className='all_projects'>
-                                        <div className='all_projects_container'>
-                                            <div className='all_projects_wrapper'>
-                                                {
-                                                    this.state.projects.map(project =>
-                                                        <div className='project'>
-                                                            <div className='project_image'>
-                                                                <figure className='project_image_wrap'>
-                                                                    <img src={project.image1} className='project_img' />
-                                                                </figure>
-                                                            </div>
-                                                            <div className='project_info'>
-                                                                <p>Title: {project.title} <span>{project.sub_title}</span></p>
-                                                                <p>Responsibility:<span>{project.role}</span></p>
-                                                            </div>
-                                                        </div>
-                                                    )
-                                                }
+                <HeaderImage heading='/works' />
+                <div className='works_links'>
+                    <div className='works_links_container'>
+                        <div className='works_links_wrapper'>
+                            <div className='works_link' onClick={() => this.handleReactProjects()}>
+                                <p>React</p>
+                            </div>
+                            <div className='works_link' onClick={() => this.handleNodeProjects()}>
+                                <p>NodeJS</p>
+                            </div>
+                            <div className='works_link' onClick={() => this.handleJavaScriptProjects()}>
+                                <p>JavaScript</p>
+                            </div>
+                            <div className='works_link' onClick={() => this.handleHTMLProjects()}>
+                                <p>HTML</p>
+                            </div>
+                        </div>
+                        <div className='all_works'>
+                            <div className='all_works_container'>
+                                <div className='all_works_wrapper'>
+                                    {
+                                        this.state.projects.map(project =>
+                                            <div className='work'>
+                                                <div className='work_image'>
+                                                    <figure className='work_image_wrap'>
+                                                        <img src={project.image1} className='work_img' />
+                                                        <img src={project.image2} className='work_img img-top' />
+                                                    </figure>
+                                                </div>
+                                                <div className='work_info'>
+                                                    <div className='work_info_container'>
+                                                        <p>Title: {project.title} <span>{project.sub_title}</span></p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -180,4 +193,4 @@ class Projects extends Component {
     }
 }
 
-export default Projects;
+export default Works;

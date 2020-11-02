@@ -8,6 +8,8 @@ import About from "./components/pages/About";
 import Certificates from "./components/pages/Certificates";
 import Experiences from "./components/pages/Experiences";
 import Projects from "./components/pages/Projects";
+import Skills from './components/pages/Skills'
+import Works from "./components/pages/Works";
 
 class App extends Component {
     constructor(props) {
@@ -25,7 +27,9 @@ class App extends Component {
                         <Route path='/about' component={About} exact />
                         <Route path='/certificates' component={Certificates} exact />
                         <Route path='/experiences' component={Experiences} exact />
+                        <Route path='/works' component={Works} exact />
                         <Route path='/projects' component={Projects} exact />
+                        <Route path='/skills' component={Skills} exact />
                     </Switch>
                     <Footer />
                 </div>
