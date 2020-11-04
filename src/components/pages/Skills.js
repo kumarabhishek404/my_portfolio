@@ -82,11 +82,16 @@ const allSkills = [
 
 class Skills extends Component {
 
+    
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
+
 
     render() {
         return (
             <>
-                <HeaderImage heading='/Skills' />
+                <HeaderImage heading=' / Skills' />
                 <div className='skills'>
                     <div className='skills_container'>
                         <div className='skills_wrapper'>

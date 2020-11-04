@@ -1,0 +1,133 @@
+.about {
+    /* border: 2px solid red; */
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.about_container {
+    /* border: 2px solid blue; */
+    padding: 0px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_container h1 {
+    color:  #0e4940;
+    font-weight: bold;
+    font-size: 3.3rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 50px;
+    /* border-bottom: 2px solid #e1e1e1; */
+}
+.about_wrapper {
+    /* border:  2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 50px 80px; */
+    /* padding-left: 150px; */
+}
+.about_info h2 {
+    font-size: 2rem;
+}
+.about_info h3 {
+    font-size: 1.5rem;
+}
+.about_image {
+    /* border: 2px solid red; */
+    /* background-color: #fffc91; */
+    width: 100%;
+    padding: 30px;
+    /* border-radius: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about_image_wrap {
+    /* border: 2px solid violet; */
+    /* border-radius: 60%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about_img {
+    /* border: 2px solid greenyellow; */
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10%;
+    width: 60%;
+}
+.about_info {
+    padding: 20px 30px;
+    letter-spacing: 0.05rem;
+}
+.name {
+    line-height: 2.5rem;
+}
+.about_para {
+    padding: 20px 50px 0 0px;
+}
+.about_social {
+    display: flex;
+    margin-top: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.social_link {
+    margin-right: 20px;
+    color: #000;
+}
+@media only screen and (max-width: 1050px) {
+    .about_wrapper {
+        grid-template-columns: repeat(1, auto);
+    }
+    .about_para {
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .about_social {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .about_container h1 {
+        font-size: 2.5rem;
+    }
+    .about_info h2 {
+        font-size: 1.7rem;
+    }
+    .about_info h3 {
+        font-size: 1.3rem;
+    }
+    .about_img {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:450px) {
+    .about_info {
+        padding: 20px 10px;
+    }
+    .about_para {
+        padding: 0px;
+    } 
+    .name {
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:360px) {
+    .about_img {
+        width: 100%;
+    }
+    .about_info h2 {
+        font-size: 1.5rem;
+    }
+    .about_info h3 {
+        font-size: 1rem;
+    }
+    .name {
+        line-height: 1.6rem;
+        margin-bottom: 10px;
+    }
+}

@@ -7,13 +7,13 @@ const teamProjects = [
     {
         title: "UDYAMI UTSAV",
         sub_title: "–A National Level Innovation and Entrepreneur Summit",
-        image1: "./images/udyamiutsav-logo.png",
+        image1: "./images/logo12.png",
         role: "–Web Developer"
     },
     {
         title: "AnimaDrive",
         sub_title: "–An Initiative for Animal Welfare",
-        image1: "./images/animadrive_lap.png",
+        image1: "./images/animadrive-logo.png",
         role: "–Web Developer"
     }
 ]
@@ -128,6 +128,12 @@ class Projects extends Component {
         })
     }
 
+     
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
+
+
 
     render() {
         return (
@@ -135,7 +141,7 @@ class Projects extends Component {
                 <div className='projecs'>
                     <div className='projects_container'>
                         <div className='projects_wrapper'>
-                            <HeaderImage heading='/projects' />
+                            <HeaderImage heading=' / projects' />
                             <div className='project_links'>
                                 <div className='project_links_container'>
                                     <div className='project_links_wrapper'>
@@ -159,7 +165,12 @@ class Projects extends Component {
                                                             </div>
                                                             <div className='project_info'>
                                                                 <p>Title: {project.title} <span>{project.sub_title}</span></p>
-                                                                <p>Responsibility:<span>{project.role}</span></p>
+                                                                {
+                                                                    (project.role != null)
+                                                                        ? <p>Responsibility:<span>{project.role}</span></p>
+                                                                        : ''
+                                                                }
+                                                                
                                                             </div>
                                                         </div>
                                                     )

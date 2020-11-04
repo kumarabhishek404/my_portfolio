@@ -22,6 +22,10 @@ const certificates = [
 
 class Certificates extends Component {
 
+     
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
 
     render() {
         return (
@@ -29,7 +33,7 @@ class Certificates extends Component {
                 <div className='home'>
                     <div className='home_container'>
                         <div className='home_wrapper'>
-                            <HeaderImage heading='/Certificates' />
+                            <HeaderImage heading=' / Certificates' />
                             <div className='certificates'>
                                 <div className='certificates_container'>
                                     <h1>Certificates</h1>

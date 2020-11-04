@@ -5,7 +5,7 @@ class Button extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            buttonStyle: false
+            buttonStyle: ''
             // path = ''
         }
     }
@@ -13,16 +13,31 @@ class Button extends Component {
     // this.sizeHandler = this.sizeHandler.bind(this)
 
     componentDidMount() {
-        (this.props.btnStyle == 'btnPrimary')
-            ? this.setState({ buttonStyle: true })
-            : this.setState({ buttonStyle: false })
+        // (this.props.btnStyle == 'btnPrimary')
+        //     ? this.setState({ buttonStyle: true })
+        //     : this.setState({ buttonStyle: false })
+        if(this.props.btnStyle == 'btnPrimary') {
+            return this.setState({
+                buttonStyle: 'btnPrimary'
+            })
+        }
+        else if (this.props.btnStyle == 'btnSecondary') {
+            return this.setState({
+                buttonStyle: 'btnSecondary'
+            })
+        }
+        else {
+            return this.setState({
+                buttonStyle: 'btnThird'
+            })
+        }
     }
 
     render() {
         return (
             <>
                 <div className='button'>
-                    <button className={this.state.buttonStyle ? 'btnPrimary' : 'btnSecondary'}>
+                    <button className={this.state.buttonStyle}>
                         {this.props.children}
                     </button>
                 </div>

@@ -143,10 +143,16 @@ class Works extends Component {
         })
     }
 
+     
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
+
+
     render() {
         return (
             <>
-                <HeaderImage heading='/works' />
+                <HeaderImage heading=' / works' />
                 <div className='works_links'>
                     <div className='works_links_container'>
                         <div className='works_links_wrapper'>
@@ -174,10 +180,11 @@ class Works extends Component {
                                                         <img src={project.image1} className='work_img' />
                                                         <div className='work_img img-top'>
                                                             <div className='second_img'>
-                                                            <img src={project.image2} className='img' />
+                                                                <img src={project.image2} className='img' />
                                                             </div>
                                                         </div>
                                                     </figure>
+                                                    <p className='mobile_view'>Mobile View</p>
                                                 </div>
                                                 <div className='work_info'>
                                                     <div className='work_info_container'>

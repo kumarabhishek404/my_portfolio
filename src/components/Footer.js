@@ -2,9 +2,19 @@ import React, { Component } from 'react';
 import './Footer.css'
 import Button from './Button'
 import { NavLink } from 'react-router-dom';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 
 class Footer extends Component {
+
+
+    handleScroll() {
+        window.scrollTo(0, 0)
+    }
 
     render() {
         return (
@@ -28,7 +38,7 @@ class Footer extends Component {
                                             <textarea cols='70' rows='3' placeholder='Write your message...' />
                                         </div>
                                     </div>
-                                    <Button>Submit</Button>
+                                    <Button btnStyle='btnSecondary'>Submit</Button>
                                     {/* <div className='action'>
                                         <button>Submit</button>
                                     </div> */}
@@ -52,7 +62,7 @@ class Footer extends Component {
                                             </div>
                                         </NavLink>
                                     </div>
-                                    <div className='link'>
+                                    <div className='link' onClick={() => this.handleScroll()}>
                                         <NavLink to='/certificates' className='link_item'>
                                             <div>
                                                 Certificates
@@ -72,6 +82,25 @@ class Footer extends Component {
                                     -----
                                     <div className='thought_container'>
                                         <p>Immm mmm mm skfnsi  wad hiu afhwq aifqwnr nas vq vqhrqwhrnwerinw dna vaniasf wnr nfwurn unqiudn qrh wbw wefbweufbw</p>
+                                    </div>
+                                    <div className='footer_social_links'>
+                                        <div className='footer_social_links_wrapper'>
+                                            <a href='https://www.linkedin.com/in/abhishek-kumar-a0197a1ab/' target='_blank' className='footer_social_link'>
+                                                <LinkedInIcon />
+                                            </a>
+                                            <a href='https://www.instagram.com/kumarabhishek404/' target='_blank' className='footer_social_link'>
+                                                <InstagramIcon />
+                                            </a>
+                                            <a className='footer_social_link'>
+                                                <EmailIcon />
+                                            </a>
+                                            <a className='footer_social_link'>
+                                                <WhatsAppIcon />
+                                            </a>
+                                            <a href='https://www.facebook.com/profile.php?id=100012152628346' target='_blank' className='footer_social_link'>
+                                                <FacebookIcon />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='about_us'>

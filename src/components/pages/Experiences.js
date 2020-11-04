@@ -20,6 +20,10 @@ const experiences = [
 
 class Experiences extends Component {
 
+     
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
 
     render() {
         return (
@@ -27,7 +31,7 @@ class Experiences extends Component {
                 <div className='home'>
                     <div className='home_container'>
                         <div className='home_wrapper'>
-                            <HeaderImage heading='/Experiences' />
+                            <HeaderImage heading=' / Experiences' />
                             <div className='experiences'>
                                 <div className='experiences_container'>
                                     <h1>Exeperiences</h1>
@@ -41,8 +45,8 @@ class Experiences extends Component {
                                                             <p>{experience.about}</p>
                                                         </div>
                                                         <div className='logo'>
-                                                            <figure>
-                                                                <img src={experience.image} alt={experience.company} />
+                                                            <figure className='experiences_logo'>
+                                                                <img src={experience.image} alt={experience.company} className='experiences_img' />
                                                             </figure>
                                                         </div>
                                                     </div>
