@@ -97,7 +97,7 @@
         /* justify-content: center; */
         /* align-items: center; */
     }
-    .navbar_container h2 {
+    .navbar_wrapper_active h2 {
         font-size: 3rem;
         margin-bottom: 20px;
     }
@@ -159,8 +159,11 @@
     .navbar_logo {
         font-size: 1rem;
     }
-    .navbar_container h2 {
-        font-size: 2.5rem;
+    .navbar_wrapper_active h2 {
+        font-size: 2.rem;
+    }
+    .navbar_wrapper h2 {
+        font-size: 2rem;
     }
     .navbar_path {
         width: 30%;
