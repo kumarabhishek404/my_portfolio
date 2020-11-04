@@ -69,8 +69,9 @@
     padding: 20px 50px 0 0px;
 }
 .about_social {
-    display: flex;
+    /* border: 2px solid red; */
     margin-top: 20px;
+    display: flex;
     /* justify-content: center; */
     align-items: center;
 }
@@ -88,7 +89,6 @@
 }
 @media only screen and (max-width: 520px) {
     .about_social {
-        flex-flow: column;
         align-items: flex-start;
     }
     .about_container h1 {

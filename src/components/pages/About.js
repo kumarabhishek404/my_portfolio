@@ -9,9 +9,9 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 class About extends Component {
 
-     
+
     componentDidMount() {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }
 
 
@@ -24,7 +24,7 @@ class About extends Component {
                             <HeaderImage heading=' / About' />
                             <div className='about'>
                                 <div className='about_container'>
-                                        <h1>About Us</h1>
+                                    <h1>About Us</h1>
                                     <div className='about_wrapper'>
                                         <div className='about_image'>
                                             <figure className='about_image_wrap'>
@@ -38,19 +38,11 @@ class About extends Component {
                                             </div>
                                             <div className='about_para'>
                                                 <p>
-                                                    I always tried to learn from myself and was successful in that is why I didn’t take admission in any college.
-                                                    I am currently looking for an organization where my skills can be complemented and polished and thus further effectuate the growth of the organization.
-                                                    I always tried to learn from myself and was successful in that is why I didn’t take admission in any college.
-                                                    I am currently looking for an organization where my skills can be complemented and polished and thus further effectuate the growth of the organization.
-                                                    I always tried to learn from myself and was successful in that is why I didn’t take admission in any college.
-                                                    I am currently looking for an organization where my skills can be complemented and polished and thus further effectuate the growth of the organization.
-                                                    I always tried to learn from myself and was successful in that is why I didn’t take admission in any college.
-                                                    I am currently looking for an organization where my skills can be complemented and polished and thus further effectuate the growth of the organization.
-                                                    I always tried to learn from myself and was successful in that is why I didn’t take admission in any college.
+                                                    I always tried to learn from myself and was successful in that and that is why I didn’t take admission in any college.
                                                     I am currently looking for an organization where my skills can be complemented and polished and thus further effectuate the growth of the organization.
                                     </p>
                                                 <div className='about_social'>
-                                                    <a href='https://www.linkedin.com/in/abhishek-kumar-a0197a1ab/' target='_blank'  className='social_link'>
+                                                    <a href='https://www.linkedin.com/in/abhishek-kumar-a0197a1ab/' target='_blank' className='social_link'>
                                                         <LinkedInIcon />
                                                     </a>
                                                     <a href='https://www.instagram.com/kumarabhishek404/' target='_blank' className='social_link'>

@@ -37,7 +37,7 @@ class Navbar extends Component {
                         <div className='navbar_container'>
                             <div className={this.state.menu ? 'navbar_wrapper_active' : 'navbar_wrapper'}>
                                 <NavLink to='/' className='navbar_logo'>
-                                    <h2>PORTFOLIO</h2>
+                                    <h2>Me.Abhishek</h2>
                                 </NavLink>
                                 <div className={this.state.menu ? 'navbar_path_active' : 'navbar_path'}>
                                     <div className={this.state.menu ? 'navbar_items_active' : 'navbar_items'}>
@@ -70,7 +70,7 @@ class Navbar extends Component {
                                         </div>
                                     </div>
                                     <div className={this.state.menu ? 'menu_container_active' : 'menu_container'} onClick={this.menuHandler}>
-                                        <Button btnStyle='btnPrimary'>{this.state.menu ? <CloseIcon /> : <MenuOpenIcon />}</Button>
+                                        <Button btnStyle='btnPrimary' className='menu_button'>{this.state.menu ? <CloseIcon /> : <MenuOpenIcon />}</Button>
                                     </div>
                                 </div>
                             </div>

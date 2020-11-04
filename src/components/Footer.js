@@ -81,7 +81,7 @@ class Footer extends Component {
                                     <h3>Someone Said...</h3>
                                     -----
                                     <div className='thought_container'>
-                                        <p>Immm mmm mm skfnsi  wad hiu afhwq aifqwnr nas vq vqhrqwhrnwerinw dna vaniasf wnr nfwurn unqiudn qrh wbw wefbweufbw</p>
+                                        <p>" The Best Way To Get Started Is To Quit Talking And Begin Doing. " <br /> - Walt Disney</p>
                                     </div>
                                     <div className='footer_social_links'>
                                         <div className='footer_social_links_wrapper'>

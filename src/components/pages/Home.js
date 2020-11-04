@@ -35,7 +35,7 @@ class Home extends Component {
                             <div className='home_links'>
                                 <div className='home_links_container'>
                                     <NavLink to='/works' className='home_link'>
-                                        <p>Work</p>
+                                        <p>Portfolio</p>
                                     </NavLink>
                                     <NavLink to='/projects' className='home_link'>
                                         <p>Project</p>
