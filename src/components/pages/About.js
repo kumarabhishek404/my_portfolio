@@ -3,7 +3,7 @@ import './About.css'
 import HeaderImage from '../HeaderImage'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import EmailIcon from '@material-ui/icons/Email';
+import WorkIcon from '@material-ui/icons/Work';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
@@ -48,10 +48,10 @@ class About extends Component {
                                                     <a href='https://www.instagram.com/kumarabhishek404/' target='_blank' className='social_link'>
                                                         <InstagramIcon />
                                                     </a>
-                                                    <a className='social_link'>
-                                                        <EmailIcon />
+                                                    <a href='https://www.naukri.com/mnjuser/profile?id=&orgn=homepage' target='_blank' className='social_link'>
+                                                    <img src='https://www.naukri.com/favicon.ico' className='social_link_img' />
                                                     </a>
-                                                    <a className='social_link'>
+                                                    <a href='https://api.whatsapp.com/send?phone=916397308499' target='_blank' className='social_link'>
                                                         <WhatsAppIcon />
                                                     </a>
                                                     <a href='https://www.facebook.com/profile.php?id=100012152628346' target='_blank' className='social_link'>

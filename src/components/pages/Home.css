@@ -63,6 +63,13 @@
     border-bottom: 2px solid #0e4940;
     padding-bottom: 0;
 }
+.home_link_img {
+    width: 27px;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
+    background-position:50% 50%;
+}
 .about_form {
     width: 30%;
     /* border: 2px solid red; */

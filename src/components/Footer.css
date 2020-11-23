@@ -138,6 +138,13 @@
     /* border: 2px solid green; */
     color: #fff;
 }
+.footer_social_link_img {
+    width: 24px;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
+    background-position:50% 50%;
+}
 
 /* About us */
 .about_us div {

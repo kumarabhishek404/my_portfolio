@@ -6,25 +6,25 @@ const certificates = [
     {
         title: 'Certificate of Appreciation For Udyami Utsav’s Teamwork by MSME Minister [ NITIN GADKARI ]',
         position: 'Web Developer',
-        image: 'https://s.tmimgcdn.com/blog/wp-content/uploads/2018/04/Web-Design.png?x54449'
+        image: '/images/certifcate1.png'
     },
-    {
-        title: 'Certificate of Best Work of the month at AnimaDrive',
-        position: 'Project Manager & Frontend Developer',
-        image: 'https://s.tmimgcdn.com/blog/wp-content/uploads/2018/04/Web-Design.png?x54449'
-    },
-    {
-        title: 'Select for the Navodaya Cluster Label Innovation Challenge of IT',
-        position: 'Presentation',
-        image: 'https://s.tmimgcdn.com/blog/wp-content/uploads/2018/04/Web-Design.png?x54449'
-    }
+    // {
+    //     title: 'Certificate of Best Work of the month at AnimaDrive',
+    //     position: 'Project Manager & Frontend Developer',
+    //     image: ''
+    // },
+    // {
+    //     title: 'Select for the Navodaya Cluster Label Innovation Challenge of IT',
+    //     position: 'Presentation',
+    //     image: ''
+    // }
 ]
 
 class Certificates extends Component {
 
-     
+
     componentDidMount() {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }
 
     render() {
@@ -41,15 +41,17 @@ class Certificates extends Component {
                                         {
                                             certificates.map(certificate =>
                                                 <div className='certificate'>
-                                                    <p>{certificate.title}</p>
-                                                    <p>Position: <span>{certificate.position}</span></p>
-                                                    <div className='certificate_image'>
-                                                        <figure>
-                                                            <img src={certificate.image} />
-                                                        </figure>
-                                                    </div>
+                                                    <a href='https://drive.google.com/file/d/11C1oVMrIVupTtNN9zsqO7qx-0m7ecxY8/view' target='_blank' className='certificate_link'>
+                                                        <p>{certificate.title}</p>
+                                                        <p>Position: <span>{certificate.position}</span></p>
+                                                        <div className='certificate_image'>
+                                                            <figure className='certificate_figure'>
+                                                                <img src={certificate.image} className='certificate_img' />
+                                                            </figure>
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                                
+
                                             )
                                         }
                                     </div>
